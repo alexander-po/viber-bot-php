@@ -82,7 +82,7 @@ class Keyboard extends Entity
      *
      * @param array $Buttons
      *
-     * @return self
+     * @return $this
      */
     public function setButtons(array $Buttons)
     {
@@ -106,7 +106,7 @@ class Keyboard extends Entity
      *
      * @param string $BgColor
      *
-     * @return self
+     * @return $this
      */
     public function setBgColor($BgColor)
     {
@@ -130,7 +130,7 @@ class Keyboard extends Entity
      *
      * @param boolean $DefaultHeight
      *
-     * @return self
+     * @return $this
      */
     public function setDefaultHeight($DefaultHeight)
     {

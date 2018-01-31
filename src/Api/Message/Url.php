@@ -51,7 +51,7 @@ class Url extends Message
      *
      * @param string $media
      *
-     * @return self
+     * @return $this
      */
     public function setMedia($media)
     {

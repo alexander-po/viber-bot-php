@@ -70,7 +70,7 @@ class File extends Message
      *
      * @param string $media
      *
-     * @return self
+     * @return $this
      */
     public function setMedia($media)
     {
@@ -94,7 +94,7 @@ class File extends Message
      *
      * @param integer $size
      *
-     * @return self
+     * @return $this
      */
     public function setSize($size)
     {
@@ -118,7 +118,7 @@ class File extends Message
      *
      * @param string $file_name
      *
-     * @return self
+     * @return $this
      */
     public function setFileName($file_name)
     {

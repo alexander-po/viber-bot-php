@@ -76,7 +76,7 @@ class State extends Entity
      *
      * @param integer $id
      *
-     * @return self
+     * @return $this
      */
     public function setId($id)
     {
@@ -100,7 +100,7 @@ class State extends Entity
      *
      * @param integer $status
      *
-     * @return self
+     * @return $this
      */
     public function setStatus($status)
     {
@@ -124,7 +124,7 @@ class State extends Entity
      *
      * @param string $message
      *
-     * @return self
+     * @return $this
      */
     public function setMessage($message)
     {
@@ -140,6 +140,6 @@ class State extends Entity
      */
     public function isOnline()
     {
-        return $this->status == self::ONLINE;
+        return $this->status == $this::ONLINE;
     }
 }

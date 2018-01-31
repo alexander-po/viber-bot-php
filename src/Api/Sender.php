@@ -66,7 +66,7 @@ class Sender extends Entity
      *
      * @param string $id
      *
-     * @return self
+     * @return $this
      */
     public function setId($id)
     {
@@ -90,7 +90,7 @@ class Sender extends Entity
      *
      * @param string $name
      *
-     * @return self
+     * @return $this
      */
     public function setName($name)
     {
@@ -114,7 +114,7 @@ class Sender extends Entity
      *
      * @param string $avatar
      *
-     * @return self
+     * @return $this
      */
     public function setAvatar($avatar)
     {

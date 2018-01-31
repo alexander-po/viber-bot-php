@@ -68,7 +68,7 @@ class Contact extends Message
      *
      * @param string $name
      *
-     * @return self
+     * @return $this
      */
     public function setName($name)
     {
@@ -92,7 +92,7 @@ class Contact extends Message
      *
      * @param string $phone_number
      *
-     * @return self
+     * @return $this
      */
     public function setPhoneNumber($phone_number)
     {
@@ -106,7 +106,7 @@ class Contact extends Message
      *
      * @param array contact
      *
-     * @return self
+     * @return $this
      */
     public function setConcat($contact)
     {

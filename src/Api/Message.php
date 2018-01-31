@@ -81,7 +81,7 @@ class Message extends Entity
      *
      * @param string $receiver
      *
-     * @return self
+     * @return $this
      */
     public function setReceiver($receiver)
     {
@@ -115,7 +115,7 @@ class Message extends Entity
      *
      * @param Sender $sender
      *
-     * @return self
+     * @return $this
      */
     public function setSender(Sender $sender)
     {
@@ -139,7 +139,7 @@ class Message extends Entity
      *
      * @param string $tracking_data
      *
-     * @return self
+     * @return $this
      */
     public function setTrackingData($tracking_data)
     {
@@ -163,7 +163,7 @@ class Message extends Entity
      *
      * @param integer $min_api_version
      *
-     * @return self
+     * @return $this
      */
     public function setMinApiVersion($min_api_version)
     {
@@ -187,7 +187,7 @@ class Message extends Entity
      *
      * @param Keyboard $keyboard
      *
-     * @return self
+     * @return $this
      */
     public function setKeyboard(Keyboard $keyboard)
     {

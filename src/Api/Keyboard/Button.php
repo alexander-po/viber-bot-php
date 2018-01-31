@@ -176,7 +176,7 @@ class Button extends Entity
      *
      * @param integer $Columns
      *
-     * @return self
+     * @return $this
      */
     public function setColumns($Columns)
     {
@@ -200,7 +200,7 @@ class Button extends Entity
      *
      * @param integer $Rows
      *
-     * @return self
+     * @return $this
      */
     public function setRows($Rows)
     {
@@ -224,7 +224,7 @@ class Button extends Entity
      *
      * @param string $BgColor
      *
-     * @return self
+     * @return $this
      */
     public function setBgColor($BgColor)
     {
@@ -248,7 +248,7 @@ class Button extends Entity
      *
      * @param string $BgMediaType
      *
-     * @return self
+     * @return $this
      */
     public function setBgMediaType($BgMediaType)
     {
@@ -272,7 +272,7 @@ class Button extends Entity
      *
      * @param string $BgMedia
      *
-     * @return self
+     * @return $this
      */
     public function setBgMedia($BgMedia)
     {
@@ -296,7 +296,7 @@ class Button extends Entity
      *
      * @param boolean $BgLoop
      *
-     * @return self
+     * @return $this
      */
     public function setBgLoop($BgLoop)
     {
@@ -320,7 +320,7 @@ class Button extends Entity
      *
      * @param string $ActionType
      *
-     * @return self
+     * @return $this
      */
     public function setActionType($ActionType)
     {
@@ -344,7 +344,7 @@ class Button extends Entity
      *
      * @param string $ActionBody
      *
-     * @return self
+     * @return $this
      */
     public function setActionBody($ActionBody)
     {
@@ -368,7 +368,7 @@ class Button extends Entity
      *
      * @param string $Image
      *
-     * @return self
+     * @return $this
      */
     public function setImage($Image)
     {
@@ -392,7 +392,7 @@ class Button extends Entity
      *
      * @param string $Text
      *
-     * @return self
+     * @return $this
      */
     public function setText($Text)
     {
@@ -416,7 +416,7 @@ class Button extends Entity
      *
      * @param string $TextVAlign
      *
-     * @return self
+     * @return $this
      */
     public function setTextVAlign($TextVAlign)
     {
@@ -440,7 +440,7 @@ class Button extends Entity
      *
      * @param string $TextHAlign
      *
-     * @return self
+     * @return $this
      */
     public function setTextHAlign($TextHAlign)
     {
@@ -464,7 +464,7 @@ class Button extends Entity
      *
      * @param integer $TextOpacity
      *
-     * @return self
+     * @return $this
      */
     public function setTextOpacity($TextOpacity)
     {
@@ -488,7 +488,7 @@ class Button extends Entity
      *
      * @param string $TextSize
      *
-     * @return self
+     * @return $this
      */
     public function setTextSize($TextSize)
     {

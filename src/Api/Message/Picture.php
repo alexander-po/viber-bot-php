@@ -64,7 +64,7 @@ class Picture extends Message
      *
      * @param string text
      *
-     * @return self
+     * @return $this
      */
     public function setText($text)
     {
@@ -88,7 +88,7 @@ class Picture extends Message
      *
      * @param string $media
      *
-     * @return self
+     * @return $this
      */
     public function setMedia($media)
     {
@@ -112,7 +112,7 @@ class Picture extends Message
      *
      * @param string $thumbnail
      *
-     * @return self
+     * @return $this
      */
     public function setThumbnail($thumbnail)
     {

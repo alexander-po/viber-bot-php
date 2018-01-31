@@ -85,7 +85,7 @@ class CarouselContent extends Message
      *
      * @param integer $value
      *
-     * @return self
+     * @return $this
      */
     public function setButtonsGroupColumns($value)
     {
@@ -109,7 +109,7 @@ class CarouselContent extends Message
      *
      * @param integer $value
      *
-     * @return self
+     * @return $this
      */
     public function setButtonsGroupRows($value)
     {
@@ -133,7 +133,7 @@ class CarouselContent extends Message
      *
      * @param string $BgColor
      *
-     * @return self
+     * @return $this
      */
     public function setBgColor($BgColor)
     {
@@ -157,7 +157,7 @@ class CarouselContent extends Message
      *
      * @param array $Buttons
      *
-     * @return self
+     * @return $this
      */
     public function setButtons($Buttons)
     {

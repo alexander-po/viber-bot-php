@@ -51,7 +51,7 @@ class Text extends Message
      *
      * @param string text
      *
-     * @return self
+     * @return $this
      */
     public function setText($text)
     {
