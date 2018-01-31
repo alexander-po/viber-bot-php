@@ -3,6 +3,8 @@
 namespace Viber\Api\Event;
 
 use Viber\Api\Event;
+use Viber\Api\Sender;
+use Viber\Api\Message as MessageEntity;
 
 /**
  * Triggers when user send message
@@ -14,21 +16,21 @@ class Message extends Event
     /**
      * Who send message
      *
-     * @var \Viber\Api\Sender
+     * @var Sender
      */
     protected $sender;
 
     /**
      * Message data
      *
-     * @var \Viber\Api\Message
+     * @var MessageEntity
      */
     protected $message;
 
     /**
      * Get the value of Who send message
      *
-     * @return \Viber\Api\Sender
+     * @return Sender
      */
     public function getSender()
     {
@@ -38,7 +40,7 @@ class Message extends Event
     /**
      * Get the value of Message data
      *
-     * @return \Viber\Api\Message
+     * @return MessageEntity
      */
     public function getMessage()
     {

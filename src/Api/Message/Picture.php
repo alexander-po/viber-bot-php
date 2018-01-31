@@ -86,7 +86,7 @@ class Picture extends Message
     /**
      * Set the value of URL of the image (JPEG)
      *
-     * @param string media
+     * @param string $media
      *
      * @return self
      */
@@ -110,7 +110,7 @@ class Picture extends Message
     /**
      * Set the value of URL of a reduced size image (JPEG)
      *
-     * @param string thumbnail
+     * @param string $thumbnail
      *
      * @return self
      */

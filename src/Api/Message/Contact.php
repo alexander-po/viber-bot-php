@@ -66,7 +66,7 @@ class Contact extends Message
     /**
      * Set the value of Name of the contact. Max 28 characters.
      *
-     * @param string name
+     * @param string $name
      *
      * @return self
      */
@@ -90,7 +90,7 @@ class Contact extends Message
     /**
      * Set the value of Phone number of the contact. Max 18 characters
      *
-     * @param string phone_number
+     * @param string $phone_number
      *
      * @return self
      */

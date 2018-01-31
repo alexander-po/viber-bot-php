@@ -51,7 +51,7 @@ class Sticker extends Message
     /**
      * Set the value of Unique Viber sticker ID.
      *
-     * @param integer sticker_id
+     * @param integer $sticker_id
      *
      * @return self
      */

@@ -2,7 +2,7 @@
 
 namespace Viber\Api\Event;
 
-use Viber\User;
+use Viber\Api\User;
 use Viber\Api\Event;
 
 /**
@@ -25,7 +25,7 @@ class Conversation extends Event
     /**
      * Viber user
      *
-     * @var \Viber\Api\User
+     * @var User
      */
     protected $user;
 
@@ -49,7 +49,7 @@ class Conversation extends Event
     /**
      * Get the value of Viber user
      *
-     * @return \Viber\Api\User
+     * @return User
      */
     public function getUser()
     {

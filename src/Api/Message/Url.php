@@ -49,7 +49,7 @@ class Url extends Message
     /**
      * Set the value of URL. Max 2,000 characters
      *
-     * @param string media
+     * @param string $media
      *
      * @return self
      */

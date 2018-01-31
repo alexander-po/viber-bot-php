@@ -3,6 +3,7 @@
 namespace Viber\Api\Event;
 
 use Viber\Api\Exception\ApiException;
+use Viber\Api\Event;
 
 /**
  * Event factory
@@ -15,7 +16,7 @@ class Factory
      * Make some event from api-request array
      *
      * @param  array $data api request data
-     * @return \Viber\Api\Event
+     * @return Event
      */
     public static function makeFromApi(array $data)
     {
@@ -39,6 +40,6 @@ class Factory
                     return new Webhook($data);
             }
         }
-        throw new ApiException('Unknow event data');
+        throw new ApiException('Unknown event data');
     }
 }

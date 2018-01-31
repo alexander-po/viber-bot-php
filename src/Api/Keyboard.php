@@ -2,8 +2,6 @@
 
 namespace Viber\Api;
 
-use Viber\Api\Entity;
-
 /**
  * Message keyboard
  *
@@ -82,7 +80,7 @@ class Keyboard extends Entity
     /**
      * Set the value of Array containing all keyboard buttons by order
      *
-     * @param array Buttons
+     * @param array $Buttons
      *
      * @return self
      */
@@ -106,7 +104,7 @@ class Keyboard extends Entity
     /**
      * Set the value of Background color of the keyboard (HEX)
      *
-     * @param string BgColor
+     * @param string $BgColor
      *
      * @return self
      */
@@ -130,7 +128,7 @@ class Keyboard extends Entity
     /**
      * Set the value of When true - the keyboard will always be displayed with the same height
      *
-     * @param boolean DefaultHeight
+     * @param boolean $DefaultHeight
      *
      * @return self
      */

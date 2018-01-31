@@ -2,8 +2,6 @@
 
 namespace Viber\Api;
 
-use Viber\Api\Entity;
-
 /**
  * Message sender
  *
@@ -56,7 +54,7 @@ class Sender extends Entity
     /**
      * Get the value of Viber User id
      *
-     * @return [type]
+     * @return string
      */
     public function getId()
     {
@@ -66,7 +64,7 @@ class Sender extends Entity
     /**
      * Set the value of Viber User id
      *
-     * @param string id
+     * @param string $id
      *
      * @return self
      */
@@ -90,7 +88,7 @@ class Sender extends Entity
     /**
      * Set the value of Viber name
      *
-     * @param string name
+     * @param string $name
      *
      * @return self
      */
@@ -114,7 +112,7 @@ class Sender extends Entity
     /**
      * Set the value of URL of the user's avatar
      *
-     * @param string avatar
+     * @param string $avatar
      *
      * @return self
      */

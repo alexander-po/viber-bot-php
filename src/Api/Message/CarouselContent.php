@@ -131,7 +131,7 @@ class CarouselContent extends Message
     /**
      * Set the value of background color of carousel content message
      *
-     * @param string BgColor
+     * @param string $BgColor
      *
      * @return self
      */

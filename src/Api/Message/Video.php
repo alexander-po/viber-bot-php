@@ -73,7 +73,7 @@ class Video extends Message
     /**
      * Set the value of URL of the video (MP4, H264)
      *
-     * @param string media
+     * @param string $media
      *
      * @return self
      */
@@ -97,7 +97,7 @@ class Video extends Message
     /**
      * Set the value of Size of the video in bytes
      *
-     * @param integer size
+     * @param integer $size
      *
      * @return self
      */
@@ -121,7 +121,7 @@ class Video extends Message
     /**
      * Set the value of Video duration in seconds
      *
-     * @param integer duration
+     * @param integer $duration
      *
      * @return self
      */
@@ -145,7 +145,7 @@ class Video extends Message
     /**
      * Set the value of URL of a reduced size image (JPEG)
      *
-     * @param string thumbnail
+     * @param string $thumbnail
      *
      * @return self
      */

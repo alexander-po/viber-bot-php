@@ -3,6 +3,7 @@
 namespace Viber\Api\Event;
 
 use Viber\Api\Event;
+use Viber\Api\User;
 
 /**
  * Triggers when user clicks a subscribe button
@@ -13,14 +14,14 @@ class Subscribed extends Event
 {
     /**
      * Viber user
-     * @var \Viber\Api\User
+     * @var User
      */
     protected $user;
 
     /**
      * Get the value of Viber user
      *
-     * @return \Viber\Api\User
+     * @return User
      */
     public function getUser()
     {

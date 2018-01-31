@@ -36,7 +36,7 @@ class File extends Message
 
     /**
      * message type
-     * @return [type] [description]
+     * @return string
      */
     public function getType()
     {
@@ -68,7 +68,7 @@ class File extends Message
     /**
      * Set the value of URL of the file
      *
-     * @param string media
+     * @param string $media
      *
      * @return self
      */
@@ -92,7 +92,7 @@ class File extends Message
     /**
      * Set the value of Size of the file in bytes
      *
-     * @param integer size
+     * @param integer $size
      *
      * @return self
      */
@@ -116,7 +116,7 @@ class File extends Message
     /**
      * Set the value of Name of the file.
      *
-     * @param string file_name
+     * @param string $file_name
      *
      * @return self
      */

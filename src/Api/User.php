@@ -2,7 +2,6 @@
 
 namespace Viber\Api;
 
-use Viber\Api\Entity;
 use Viber\Api\Exception\ApiException;
 
 /**
@@ -87,12 +86,12 @@ class User extends Entity
     /**
      * Create user instance from api response array
      *
-     * @throws \Viber\Api\Exception\ApiException
+     * @throws ApiException
      * @param  array $properties list of properties
      */
     public function __construct($properties)
     {
-        if (!is_array($properties) && !$properties instanceof ArrayAccess) {
+        if (!is_array($properties) && !$properties instanceof \ArrayAccess) {
             throw new ApiException('Properties must be an array or implement ArrayAccess');
         }
         foreach ($properties as $propertyName => $propertyValue) {

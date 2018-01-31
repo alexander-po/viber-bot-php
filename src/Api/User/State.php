@@ -74,7 +74,7 @@ class State extends Entity
     /**
      * Set the value of Viber user id
      *
-     * @param integer id
+     * @param integer $id
      *
      * @return self
      */
@@ -98,7 +98,7 @@ class State extends Entity
     /**
      * Set the value of Status code
      *
-     * @param integer status
+     * @param integer $status
      *
      * @return self
      */
@@ -122,7 +122,7 @@ class State extends Entity
     /**
      * Set the value of Status description
      *
-     * @param string message
+     * @param string $message
      *
      * @return self
      */

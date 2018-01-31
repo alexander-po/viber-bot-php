@@ -2,8 +2,6 @@
 
 namespace Viber\Api;
 
-use Viber\Api\Entity;
-
 /**
  * General message object
  *
@@ -28,7 +26,7 @@ class Message extends Entity
     /**
      * Sender information
      *
-     * @var \Viber\Api\Sender
+     * @var Sender
      */
     protected $sender;
 
@@ -49,7 +47,7 @@ class Message extends Entity
     /**
      * Custom keyboard for message
      *
-     * @var \Viber\Api\Keyboard
+     * @var Keyboard
      */
     protected $keyboard;
 
@@ -81,7 +79,7 @@ class Message extends Entity
     /**
      * Set the value of Viber user
      *
-     * @param string receiver
+     * @param string $receiver
      *
      * @return self
      */
@@ -105,7 +103,7 @@ class Message extends Entity
     /**
      * Get the value of Sender information
      *
-     * @return \Viber\Api\Sender
+     * @return Sender
      */
     public function getSender()
     {
@@ -115,11 +113,11 @@ class Message extends Entity
     /**
      * Set the value of Sender information
      *
-     * @param \Viber\Api\Sender sender
+     * @param Sender $sender
      *
      * @return self
      */
-    public function setSender(\Viber\Api\Sender $sender)
+    public function setSender(Sender $sender)
     {
         $this->sender = $sender;
 
@@ -139,7 +137,7 @@ class Message extends Entity
     /**
      * Set the value of Track messages and user’s replies. Passed back with user’s reply
      *
-     * @param string tracking_data
+     * @param string $tracking_data
      *
      * @return self
      */
@@ -163,7 +161,7 @@ class Message extends Entity
     /**
      * Set the value of API version required by clients
      *
-     * @param integer min_api_version
+     * @param integer $min_api_version
      *
      * @return self
      */
@@ -177,7 +175,7 @@ class Message extends Entity
     /**
      * Get the value of Custom keyboard for message
      *
-     * @return \Viber\Api\Keyboard
+     * @return Keyboard
      */
     public function getKeyboard()
     {
@@ -187,11 +185,11 @@ class Message extends Entity
     /**
      * Set the value of Custom keyboard for message
      *
-     * @param \Viber\Api\Keyboard keyboard
+     * @param Keyboard $keyboard
      *
      * @return self
      */
-    public function setKeyboard(\Viber\Api\Keyboard $keyboard)
+    public function setKeyboard(Keyboard $keyboard)
     {
         $this->keyboard = $keyboard;
 

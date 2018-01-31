@@ -2,8 +2,6 @@
 
 namespace Viber\Api;
 
-use Viber\Api\User;
-use Viber\Api\Sender;
 use Viber\Api\Message\Factory as MessageFactory;
 
 /**

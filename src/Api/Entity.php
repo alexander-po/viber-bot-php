@@ -2,6 +2,8 @@
 
 namespace Viber\Api;
 
+use Viber\Api\Exception\ApiException;
+
 /**
  * Api entity interface
  *
@@ -26,7 +28,7 @@ class Entity
         if (is_null($properties)) {
             return;
         }
-        if (!is_array($properties) && !$properties instanceof ArrayAccess) {
+        if (!is_array($properties) && !$properties instanceof \ArrayAccess) {
             throw new ApiException('Properties must be an array or implement ArrayAccess');
         }
         if (empty($this->propertiesMap)) { // no property map

@@ -22,7 +22,7 @@ class Signature
     }
 
     /**
-     * Is message signatore valid?
+     * Is message signature valid?
      *
      * @param  string  $sign        from request headers
      * @param  string  $messageBody from request body

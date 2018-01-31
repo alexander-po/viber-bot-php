@@ -39,6 +39,6 @@ class Factory
                     return new Location($data);
             }
         }
-        throw new ApiException('Unknow message data');
+        throw new ApiException('Unknown message data');
     }
 }

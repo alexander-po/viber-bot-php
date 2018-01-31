@@ -174,7 +174,7 @@ class Button extends Entity
     /**
      * Set the value of Button width in columns (1-6)
      *
-     * @param integer Columns
+     * @param integer $Columns
      *
      * @return self
      */
@@ -198,7 +198,7 @@ class Button extends Entity
     /**
      * Set the value of Button height in rows (1-2)
      *
-     * @param integer Rows
+     * @param integer $Rows
      *
      * @return self
      */
@@ -222,7 +222,7 @@ class Button extends Entity
     /**
      * Set the value of Background color of button
      *
-     * @param string BgColor
+     * @param string $BgColor
      *
      * @return self
      */
@@ -246,7 +246,7 @@ class Button extends Entity
     /**
      * Set the value of Type of the background media ("picture" or "gif")
      *
-     * @param string BgMediaType
+     * @param string $BgMediaType
      *
      * @return self
      */
@@ -270,7 +270,7 @@ class Button extends Entity
     /**
      * Set the value of URL for background media content.
      *
-     * @param string BgMedia
+     * @param string $BgMedia
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class Button extends Entity
     /**
      * Set the value of When true - animated background media (gif) will loop continuously.
      *
-     * @param boolean BgLoop
+     * @param boolean $BgLoop
      *
      * @return self
      */
@@ -318,7 +318,7 @@ class Button extends Entity
     /**
      * Set the value of Type of action pressing the button will perform.
      *
-     * @param string ActionType
+     * @param string $ActionType
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class Button extends Entity
     /**
      * Set the value of Text for reply ActionType OR URL for "open-url".
      *
-     * @param string ActionBody
+     * @param string $ActionBody
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class Button extends Entity
     /**
      * Set the value of URL of image to place on top of background (if any). Can be a partially
      *
-     * @param string Image
+     * @param string $Image
      *
      * @return self
      */
@@ -390,7 +390,7 @@ class Button extends Entity
     /**
      * Set the value of Text to be displayed on the button. Can contain some HTML tags.
      *
-     * @param string Text
+     * @param string $Text
      *
      * @return self
      */
@@ -414,7 +414,7 @@ class Button extends Entity
     /**
      * Set the value of Vertical alignment of the text
      *
-     * @param string TextVAlign
+     * @param string $TextVAlign
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class Button extends Entity
     /**
      * Set the value of Horizontal align of the text
      *
-     * @param string TextHAlign
+     * @param string $TextHAlign
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class Button extends Entity
     /**
      * Set the value of Text opacity. Range: 0-100
      *
-     * @param integer TextOpacity
+     * @param integer $TextOpacity
      *
      * @return self
      */
@@ -486,7 +486,7 @@ class Button extends Entity
     /**
      * Set the value of Text size out of 3 available options: small, regular, large
      *
-     * @param string TextSize
+     * @param string $TextSize
      *
      * @return self
      */
