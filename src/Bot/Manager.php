@@ -28,8 +28,8 @@ class Manager
     /**
      * Create new event manager (event checker and event handler)
      *
-     * @param  Closure $checker
-     * @param  Closure $handler
+     * @param  \Closure $checker
+     * @param  \Closure $handler
      */
     public function __construct(\Closure $checker, \Closure $handler)
     {
@@ -60,7 +60,7 @@ class Manager
     /**
      * While event checker match current event?
      *
-     * @param  \Viber\Api\Event $event
+     * @param  Event $event
      * @return boolean
      */
     public function isMatch(Event $event)
@@ -74,7 +74,7 @@ class Manager
     /**
      * Process event with handler function
      *
-     * @param  \Viber\Api\Event $event
+     * @param  Event $event
      * @return mixed event handler result
      */
     public function runHandler(Event $event)

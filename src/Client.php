@@ -4,6 +4,7 @@ namespace Viber;
 
 use Viber\Api\Event\Type;
 use Viber\Api\Message;
+use Viber\Api\Response;
 use Viber\Api\Exception\ApiException;
 
 /**
@@ -41,7 +42,7 @@ class Client
      * token  required  string  authentication token
      * http   optional  array   adapter parameters
      *
-     * @throws \Viber\Api\Exception\ApiException
+     * @throws ApiException
      * @param array $options
      */
     public function __construct($options)
@@ -72,10 +73,10 @@ class Client
     /**
      * Call api method
      *
-     * @throws \Viber\Api\Exception\ApiException
+     * @throws ApiException
      * @param  string $method method name
      * @param  mixed $data method data
-     * @return \Viber\Api\Response
+     * @return Response
      */
     public function call($method, $data)
     {
@@ -86,7 +87,7 @@ class Client
                 ],
                 'json'    => $data
             ]);
-            return \Viber\Api\Response::create($response);
+            return Response::create($response);
         } catch (\RuntimeException $e) {
             throw new ApiException($e->getMessage(), $e->getCode(), $e);
         }
@@ -99,10 +100,10 @@ class Client
      * from a trusted CA will be allowed.
      *
      * @see \Viber\Api\Event\Type
-     * @throws \Viber\Api\Exception\ApiException
+     * @throws ApiException
      * @param string $url webhook url
      * @param array|null $eventTypes subscribe to certain events
-     * @return \Viber\Api\Response
+     * @return Response
      */
     public function setWebhook($url, $eventTypes = null)
     {
@@ -122,8 +123,8 @@ class Client
     /**
      * Fetch the public account’s details as registered in Viber
      *
-     * @throws \Viber\Api\Exception\ApiException
-     * @return \Viber\Api\Response
+     * @throws ApiException
+     * @return Response
      */
     public function getAccountInfo()
     {
@@ -137,9 +138,9 @@ class Client
      * user's actions. This request can be sent twice during a 12 hours period
      * for each user ID.
      *
-     * @throws \Viber\Api\Exception\ApiException
+     * @throws ApiException
      * @param string $userId
-     * @return \Viber\Api\Response
+     * @return Response
      */
     public function getUserDetails($userId)
     {
@@ -154,9 +155,9 @@ class Client
      * The API supports up to 100 user id per request and those users must be
      * subscribed to the PA.
      *
-     * @throws \Viber\Api\Exception\ApiException
+     * @throws ApiException
      * @param  array $userIds list of user ids
-     * @return \Viber\Api\Response
+     * @return Response
      */
     public function getOnlineStatus(array $userIds)
     {
@@ -168,8 +169,8 @@ class Client
     /**
      * Send messages to Viber users who subscribe to the PA.
      *
-     * @param  \Viber\Api\Message $message
-     * @return \Viber\Api\Response
+     * @param  Message $message
+     * @return Response
      */
     public function sendMessage(Message $message)
     {

@@ -3,12 +3,12 @@
 namespace Viber;
 
 use Closure;
-use Viber\Client;
 use Viber\Bot\Manager;
 use Viber\Api\Event;
 use Viber\Api\Signature;
 use Viber\Api\Event\Factory;
 use Viber\Api\Entity;
+use Viber\Api\Message;
 
 /**
  * Build bot with viber client
@@ -20,7 +20,7 @@ class Bot
     /**
      * Api client
      *
-     * @var \Viber\Client
+     * @var Client
      */
     protected $client;
 
@@ -36,7 +36,7 @@ class Bot
      *
      * Required options (one of two):
      * token  string
-     * client \Viber\Client
+     * client Client
      *
      * @throws \RuntimeException
      * @param array $options
@@ -55,7 +55,7 @@ class Bot
     /**
      * Get current bot client
      *
-     * @return |Viber\Client
+     * @return Client
      */
     public function getClient()
     {
@@ -68,7 +68,7 @@ class Bot
      * @param \Closure  $checker checker function
      * @param \Closure  $handler handler function
      *
-     * @return \Viber\Bot
+     * @return Bot
      */
     public function on(\Closure $checker, \Closure $handler)
     {
@@ -81,14 +81,14 @@ class Bot
      *
      * @param  string  $regexp  valid regular expression
      * @param  Closure $handler event handler
-     * @return \Viber\Bot
+     * @return Bot
      */
     public function onText($regexp, \Closure $handler)
     {
         $this->managers[] = new Manager(function (Event $event) use ($regexp) {
             return (
-                $event instanceof \Viber\Api\Event\Message
-                && $event->getMessage() instanceof \Viber\Api\Message\Text
+                $event instanceof Event\Message
+                && $event->getMessage() instanceof Message\Text
                 && preg_match($regexp, $event->getMessage()->getText())
             );
         }, $handler);
@@ -96,15 +96,15 @@ class Bot
     }
 
     /**
-     * Register subscrive event handler
+     * Register subscribe event handler
      *
      * @param  Closure $handler valid function
-     * @return \Viber\Bot
+     * @return Bot
      */
     public function onSubscribe(\Closure $handler)
     {
         $this->managers[] = new Manager(function (Event $event) {
-            return ($event instanceof \Viber\Api\Event\Subscribed);
+            return ($event instanceof Event\Subscribed);
         }, $handler);
         return $this;
     }
@@ -113,12 +113,12 @@ class Bot
      * Register conversation event handler
      *
      * @param  Closure $handler valid function
-     * @return \Viber\Bot
+     * @return Bot
      */
     public function onConversation(\Closure $handler)
     {
         $this->managers[] = new Manager(function (Event $event) {
-            return ($event instanceof \Viber\Api\Event\Conversation);
+            return ($event instanceof Event\Conversation);
         }, $handler);
         return $this;
     }
@@ -169,8 +169,8 @@ class Bot
      * Start bot process
      *
      * @throws \RuntimeException
-     * @param \Viber\Api\Event $event start bot with some event
-     * @return \Viber\Bot
+     * @param Event $event start bot with some event
+     * @return Bot
      */
     public function run($event = null)
     {
